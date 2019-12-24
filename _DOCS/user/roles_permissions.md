@@ -12,25 +12,36 @@ beylina-polina Roles and Permissions
 
 
 
-# Roles list (draft)
-        
-* ###New 
-        have rights: [auth];
-* ###Admin 
-         have rights:
-* ###Learner: 
-        have rights: [auth, get all course,  get all lectures, create diary, quiz(get, answer), flash (get, train) ];
-* ###Student: 
-        (have rights: [auth, get all course,  get all lectures, get all homework, create diary, quiz(get, answer), flash (get, train) ];
-* ###Teacher: 
-        (have rights: [auth, get all users, get all groups,  lecture (create, update, get), homework(get, create, update), get all diary, quiz(get, create, update, answer)  ]:
-* ###Quiz: 
-         have rights:
+# Roles and rights (draft)
+All roles have the right to auth.
 
-* ###Course:
-         have rights:
+### New 
+Initial role after registration. 
+This role Created to protect the app from low-quality profiles.
+
+### Learner: 
+ * course: get all ,  
+ * lectures: get all, 
+ * diary: create  
+ * quiz: get, create answer, 
+ * flash: get, create training
+ 
+### Student: 
+ * course: get all,  
+ * lectures: get all, 
+ * homework: get all,
+ * diary: create  
+ * quiz:get, create answer, 
+ * flash: get, create training
+
+### Teacher: 
+        (have rights: [auth, get all users, get all groups,  lecture (create, update, get), homework(get, create, update), get all diary, quiz(get, create, update, answer)  ]:
+
+### Quiz: 
+
+### Course:
         
-* ###Flash: 
-         have rights:
-        
-        
+### Flash: 
+
+### Admin 
+This role has all permissions.        
